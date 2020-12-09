@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="MyApp3.Controls.EmployeeDetailControl"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="using:MyApp3.Controls"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="400">
+
+  <StackPanel>
+    <TextBox Header="Firstname" Margin="10" Text="{x:Bind Employee.FirstName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+    <TextBox Header="Lastname" Margin="10" Text="{x:Bind Employee.LastName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+    <TextBox Header="Nationality" Margin="10" Text="{x:Bind Employee.Nationality,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+  </StackPanel>
+</UserControl>
